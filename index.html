@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+    <h1 id="title">Date Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"/></label>
+        <label id="number-label">Age (optional) <input id="number" type="number" min="20" max="49" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label id="drop">
+        Which option best descibes you?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Regular dater of Mattie</option>
+            <option value="2">Occasional dater of Mattie</option>
+            <option value="3">Rare dater of Mattie</option>
+          </select>
+          </label>
+        <p class="improve">Would you recommend Mattie to a friend?</p>
+        <label id="recommend"><input id="recommend" type="radio" name="recommend" value="yes" class="inline" /> 10000%</label>
+        <label id="nah"><input id="nah" type="radio" name="recommend" value="no" class="inline" /> Nah</label>
+      </fieldset>
+      <fieldset>
+        <p class="improve">What would you like to see improved?</p>
+        <label id="speed">
+          <input id="speed" type="checkbox"  name="speed" class="inline" value="speed"/>Speed at which Mattie gets ready
+        </label>
+        <label id="fancy">
+          <input id="fancy" type="checkbox"  name="fancy" class="inline" value="fancy"/>Fancy-ness of location
+        </label>
+        <label id="vibes">
+          <input id="vibes" type="checkbox"  name="vibes" class="inline" value="vibes"/>Quality of vibes
+        </label>
+        <label id="kisses">
+          <input id="kisses" type="checkbox"  name="kisses" class="inline" value="kisses"/>Number of kisses received
+        </label>
+        <label id="comments" class="comments">Please leave any additional comments: 
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="My favourite thing about Mattie is..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
